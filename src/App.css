@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffdf8;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}

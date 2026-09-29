@@ -1,0 +1,156 @@
+.hero {
+  min-height: 600px;
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  box-sizing: border-box;
+  background:radial-gradient(circle at 10% 20%, #fff3d6 0, transparent 25%),radial-gradient(circle at 90% 80%, #fce3df 0, transparent 28%), #fffaf1;
+}
+
+.hero-content {
+  width: 50%;
+  max-width: 600px;
+}
+
+.hero-small-title {
+  color: #b76e2d;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  color: #6d3b20;
+  font-family: Georgia, serif;
+  font-size: 52px;
+  line-height: 1.15;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #b96929;
+  margin-top: 8px;
+}
+
+.hero-description {
+  color: #755b48;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 25px 0;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.shop-btn,
+.know-btn {
+  text-decoration: none;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.shop-btn {
+  background: #b96b2c;
+  color: white;
+}
+
+.shop-btn:hover {
+  background: #8f4e20;
+  transform: translateY(-2px);
+}
+
+.know-btn {
+  color: #8b4a22;
+  border: 1px solid #c99a6b;
+  background: #fff;
+}
+
+.know-btn:hover {
+  background: #f9ead6;
+}
+
+.hero-image-wrapper {
+  width: 45%;
+  max-width: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 250px 250px 25px 25px;
+  border: 8px solid #fff;
+  box-shadow: 0 15px 40px rgba(109, 59, 32, 0.18);
+}
+
+.hero-decoration {
+  position: absolute;
+  top: -25px;
+  left: -15px;
+  font-size: 42px;
+  z-index: 2;
+}
+
+.hero-bottom-decoration {
+  position: absolute;
+  bottom: -20px;
+  right: -15px;
+  font-size: 42px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 6%;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+  }
+
+  .hero-image {
+    height: 380px;
+  }
+}

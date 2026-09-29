@@ -1,0 +1,58 @@
+.navbar {
+  width: 100%;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 248, 235, 0.96);
+  border-bottom: 1px solid #ead7b7;
+  box-sizing: border-box;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo span {
+  font-size: 30px;
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #8b4a22;
+  font-family: Georgia, serif;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #6d4328;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #c47a25;
+}
+
+.cart-btn {
+  border: none;
+  background: #b96b2c;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-btn:hover {
+  background: #8f4e20;
+}
